@@ -1,0 +1,117 @@
+.intro{
+    height: 400px;
+    background-color: blueviolet;
+    opacity: 0.5;
+    background-image: url('../pic/adult.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.intro2{
+    height: 400px;
+    background-color:white;
+}
+.row{
+    padding:0;
+    margin: 0;
+}
+.intro-text1{
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#0C9;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    box-shadow: 2px 2px 3px #999;
+    
+}
+.float:hover{
+    text-decoration: none;
+}
+.my-float{
+	margin-top:22px;
+}
+.message{
+}
+.message-in{
+    height: 100px;
+    border: 1px solid black;
+
+}
+.message-out{
+    height: 100px;
+    border: 1px solid green;
+}
+.send{
+display: block;
+bottom: 0;
+}
+.send-text{
+
+}
+.body-chat{
+    background-color: #0C9;
+}
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: 10px;
+  }
+  .accordion.active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
+  .accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .accordion.active:after {
+    content: "\2796"; 
+  }
+
+  /* //////////////////////////////////////////////////// */
+  .chat-box{
+    height: 500px;
+    top: 100px;
+    border: 1px dotted black;
+    background-color:#FFF;
+
+}

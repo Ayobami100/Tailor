@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <title>Profile Page</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html"><h2>YOUR DESIGNER</h1></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+                </li>                                  
+                <li class="nav-item">
+                        <a class="nav-link" href="chat.html">Chat</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="row">
+        <div class="col-sm-4">
+            <img src="./pic/img1.jpg"><br/>
+            <h2>Designer's Details</h2>
+        </div>
+        <div class="col-sm-8">
+                <h2 class="text-danger bg-light">Designer's History</h2><br>
+        
+            <button class="accordion">Different Gown Designs?</button>
+            <div class="panel">
+                <img src="./pic/gown1.jpg" style="display: inline-block">
+                <img src="./pic/gown2.jpg"/>
+            </div>
+            
+
+            <button class="accordion">Different Gear Designs?</button>
+            <div class="panel">
+                <img src="./pic/gown1.jpg" style="display: inline-block">
+                <img src="./pic/gown2.jpg"/>
+            </div>
+
+            <button class="accordion">Different Asoebi Designs?</button>
+            <div class="panel">
+                <img src="./pic/gown1.jpg" style="display: inline-block">
+                <img src="./pic/gown2.jpg"/>
+            </div>
+        </div>
+       
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="chat.html" class="float">
+    &#9964<i class="my-float"></i>
+</a>
+
+
+
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+        panel.style.display = "none";
+        } else {
+        panel.style.display = "block";
+        }
+    });
+    }
+</script>
+</body>
+</html>
